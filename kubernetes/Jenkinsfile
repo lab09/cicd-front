@@ -53,7 +53,7 @@ podTemplate(label: label, containers: [
 				sh "sonar-scanner \
 					-Dsonar.projectName=${sonarQubeProject} \
 					-Dsonar.host.url=${sonarQubeURL} \
-					-Dsonar.projectBaseDir=./”}}
+					-Dsonar.projectBaseDir=./"}}
 				
 		// #5 컨테이너 이미지 생성 Stage
 		stage('Dockerizing') {
