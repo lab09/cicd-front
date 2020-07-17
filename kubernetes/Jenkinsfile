@@ -68,7 +68,7 @@ podTemplate(label: label, containers: [
 			container('kubectl') {
 				sh "kubectl apply -n ${namespace} -f ${deployment}"
 				sh "kubectl apply -n ${namespace} -f ${service}"
-				sh "kubectl get svc -n devops" }}
+				sh "kubectl get svc -n ${namespace}" }}
 
 		// Slack - 빌드 성공시
 
