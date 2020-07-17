@@ -24,9 +24,11 @@ podTemplate(label: label, containers: [
 		}
 		// #2 Properties 파일 읽기		
 		def props = readProperties file:"./kubernetes/pipeline.properties" 
-		def tag = props["version"]def dockerRegistry = props["dockerRegistry"]
+		def tag = props["version"]
+		def dockerRegistry = props["dockerRegistry"]
 		def credentialRegistry=props["credentialRegistry"] 
-		def image = props["image"]def appname = props["appname"]
+		def image = props["image"]
+		def appname = props["appname"]
 		def containername = props["containerName"]
 		def deployment = props["deployment"]
 		def service = props["service"]
