@@ -15,7 +15,7 @@ spec:
         app: frontend-lab09
     spec:
       containers:
-        - name: frontend-kisjang
+        - name: frontend-lab09
           image: nalleyda/frontend-lab09
           imagePullPolicy: Always
           ports:
