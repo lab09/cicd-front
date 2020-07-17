@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend-lab09
-          image: nalleyda/frontend-lab09
+          image: wodus22120/frontend-lab09
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
