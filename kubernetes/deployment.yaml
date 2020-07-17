@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-kisjang
+  name: frontend-lab09
   labels:
-    app: frontend-kisjang
+    app: frontend-lab09
 spec:
   selector:
     matchLabels:
-      app: frontend-kisjang
+      app: frontend-lab09
   replicas: 1
   template:
     metadata:
       labels:
-        app: frontend-kisjang
+        app: frontend-lab09
     spec:
       containers:
         - name: frontend-kisjang
-          image: nalleyda/frontend-kisjang
+          image: nalleyda/frontend-lab09
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
